@@ -1,6 +1,13 @@
 # Pose Estimation Project Documentation
+https://github.com/mohamedelsayed10/Pose-Estimation/assets/87568101/e707f125-da02-41cf-a518-c6739ec64e9b
+
+
+![image](https://github.com/mohamedelsayed10/Pose-Estimation/assets/87568101/846eca7a-d0e2-4f4d-88e0-db0c0800cae0)
 
 ## Overview
+
+
+
 
 The Pose Estimation project is designed for predicting the orientation angles (roll, pitch, and yaw) of human faces in images and videos. It encompasses a series of scripts and Jupyter notebooks for data collection, model training, and deployment using facial landmarks obtained from the [MediaPipe Face Mesh](https://google.github.io/mediapipe/solutions/face_mesh) model.
 
