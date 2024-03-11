@@ -67,12 +67,12 @@ def extract_landmarks(results, imgname, xy, nose):
 def process_jpg(imgname, xy, nose):
     face_module = mediapipe.solutions.face_mesh
     with face_module.FaceMesh(static_image_mode=True) as faces:
-        image_path = fr'C:\Users\mohamed elsayed\Desktop\Pose Estimation\AFLW2000\{imgname}'
+        image_path = fr'C:\Users\mohamed elsayed\Desktop\projects\Pose Estimation\AFLW2000\{imgname}'
         results = process_image(image_path, faces)
         extract_landmarks(results, imgname, xy, nose)
 
 def process_mat(imgname, pitch, yaw, roll):
-    mat = sio.loadmat(fr'C:\Users\mohamed elsayed\Desktop\Pose Estimation\AFLW2000\{imgname}')
+    mat = sio.loadmat(fr'C:\Users\mohamed elsayed\Desktop\projects\Pose Estimation\AFLW2000\{imgname}')
     pose_para = mat["Pose_Para"][0][:3]
     pitch.append(pose_para[0])
     yaw.append(pose_para[1])
